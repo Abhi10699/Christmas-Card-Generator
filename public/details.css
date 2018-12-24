@@ -4,6 +4,8 @@ body{
 	display:flex;
 	justify-content:center;
 	align-items:center;
+	overflow:hidden;
+	background-color:#FF0040;
 }
 
 input[type=text]{
@@ -11,32 +13,60 @@ input[type=text]{
 	width:300px;
 	height:70px;
 	border:none;
-	border-bottom:3px solid black;
+	border-bottom:3px solid white;
 }
 
 textarea{
 	border:none;
-	border-bottom:3px solid black;
+	border-bottom:3px solid white;
 	overflow:hidden;
 	margin-top:10px;
 }
-
+.container{
+	position:relative;
+}
 textarea,input[type=text]{
 	background-color:transparent;
 }
 
 form{
-	border:3px solid black;
-	padding:15px;
+	border:5px solid white;
+	padding:26px;
 	text-align:center;
+	border-radius:10px;
+	color:white;
+	overflow:hidden;
+}
+
+.bulb,.bulb2{
+	width:80px;
+	position:absolute;
+}
+
+.globe{
+	width:100px;
+	position:absolute;
+	top:-94px;
+	left:120px;
+
+}
+
+.gift{
+	width:100px;
+	position:absolute;
+	top:78%;
+	left:200px;
+}
+
+.bulb2{
+	left:80%;
 }
 
 button{
 	margin-top:10px;
 	width:100px;
 	height:50px;
-	background-color:black;
-	border:3px solid black;
+	border:3px solid white;
 	padding:10px;
 	font-size:20px;
 	font-weight:bold;
@@ -44,11 +74,14 @@ button{
 	padding:10px;
 	border-radius:7px;
 	cursor:pointer;
+	background-color:transparent;
 	display:block;
 }
 
-input[type=text]::placeholder{
-	color:black;
+input[type=text]::placeholder,textarea::placeholder{
+	font-family:sans-serif;
+	font-weight:bold;
+	color:white;
 }
 
 input[type=text]:focus,textarea:focus{
